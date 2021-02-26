@@ -56,7 +56,7 @@ def hamming_distance(s1, s2):
     s2 = Sequence(s2)
     return s1.distance(s2)
 
-def show_F(h_sequence, v_sequence, data, hide_zeros=False, nonzero_val=None):
+'''def show_F(h_sequence, v_sequence, data, hide_zeros=False, nonzero_val=None):
     rows = []
     col_headers = [c.decode('UTF-8') for c in h_sequence.values]
     row_headers = [c.decode('UTF-8') for c in v_sequence.values]
@@ -78,7 +78,7 @@ def show_F(h_sequence, v_sequence, data, hide_zeros=False, nonzero_val=None):
                 else:
                     current_row.append(e)
         rows.append(current_row)
-    return tabulate.tabulate(rows, headers=col_headers, tablefmt='html')
+    return tabulate.tabulate(rows, headers=col_headers, tablefmt='html')'''
 
 def show_T(h_sequence, v_sequence, data):
     if data.dtype == np.int:
